@@ -5,7 +5,6 @@ import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 class DetailPage extends StatelessWidget {
   final String link;
 
-  // 생성자
   DetailPage({required this.link});
 
   @override
@@ -16,7 +15,7 @@ class DetailPage extends StatelessWidget {
       ),
       body: InAppWebView(
         // 초기 URL을 설정하여 WebView 로드
-        initialUrlRequest: URLRequest(url: Uri.parse(link)),
+        initialUrlRequest: URLRequest(url: WebUri.uri(Uri.parse(link))),
       ),
     );
   }
