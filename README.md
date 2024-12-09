@@ -1,16 +1,15 @@
-# regional_search
+# 지역기반 검색 앱
 
-A new Flutter project.
+이 프로젝트는 네이버 지역 검색 API를 사용하여 위치를 검색하고 정보를 제공하는 Flutter 애플리케이션입니다.
 
-## Getting Started
+## 기능
+- 검색어를 입력하여 지역 정보를 검색
+- 검색 결과를 리스트로 표시
+- 리스트 아이템 클릭 시 상세 정보를 웹뷰로 표시
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 프로젝트 구조
+- `main.dart` : 애플리케이션의 진입점입니다.
+- `location.dart` : 위치 정보를 저장하는 모델 클래스입니다.
+- `location_repository.dart` : 네이버 API를 호출하여 위치 정보를 가져오는 리포지토리 클래스입니다.
+- `home_page.dart` : 검색 입력을 위한 텍스트 필드와 검색 결과를 표시하는 리스트뷰를 포함한 홈 페이지입니다.
+- `detail_page.dart` : 선택된 위치의 상세 정보를 웹뷰로 표시하는 디테일 페이지입니다.
